@@ -1,0 +1,13 @@
+"""
+r - abre para ler 
+w - abre para escrever/sobrescreve o arquivo
+a - abre para escrever/novo conteúdo é adicionado ao final do arquivo
++
+b
+"""
+
+try:
+    with open('emails.txt') as arquivo:
+        print(arquivo.readline())
+except FileNotFoundError as error:
+    print('Arquivo não encontrado.')
